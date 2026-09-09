@@ -76,40 +76,6 @@ The Downloader and Settings tabs are always free to use, no license required.
 
 The VI | EN toggle at the bottom of the sidebar switches the entire UI language instantly, no restart needed. Your choice is remembered for next time.
 
-📁 Project structure
-main.py                        # entry point, loads the app icon
-app_icon.ico                   # app icon (dev-mode runtime)
-core/
-  tmdb_client.py                # trending/popular/upcoming/on_the_air/search + external_ids
-  opensubtitles_client.py       # login + search by imdb_id + download
-  subsource_client.py           # search by imdb_id + download (ZIP extraction)
-  subtitle_models.py            # shared SubtitleResult dataclass
-  gemini_translator.py          # Gemini translation, multi-key rotation (original logic preserved)
-  subtitle_parser.py            # parse/write .srt .ass .vtt (unchanged)
-  tmdb_helper.py                # movie context from filename for better translations (unchanged)
-license/
-  license_system.py             # HWID + HMAC + Fernet license/trial system (unchanged)
-config/
-  settings_manager.py           # stores OpenSubtitles/SubSource creds + save path (password encrypted)
-  languages.py                  # language mapping between OpenSubtitles <-> SubSource
-  i18n.py                       # VI/EN UI translation table
-ui/
-  main_window.py                # sidebar with 3 tabs + language toggle, license gate
-  downloader_tab.py             # search bar + Movie/TV toggle + poster grid
-  movie_detail_dialog.py        # source picker popup + result list + download
-  settings_tab.py                # credentials form + language switch
-  translate_tab.py              # translation UI (embedded from the original MainWindow as a tab)
-  activation_dialog.py          # license key entry dialog (unchanged)
-  poster_widget.py               # poster card + async image loading (capped at 4 concurrent connections)
-  workers.py                     # QThread helper for non-blocking network calls
-  theme.py                       # shared dark theme QSS
-packaging/
-  build_exe.spec                 # PyInstaller spec (onedir, no UPX, version info, icon)
-  version_info.txt               # exe metadata
-  installer.iss                  # Inno Setup script to build the installer .exe
-  app_icon.ico                   # icon used at build time
-  BUILD_GUIDE.md                 # build instructions + how to avoid AV false positives
-🛠️ Built with
 
 Python 3 · PyQt5 · TMDB API · OpenSubtitles REST API v1 · SubSource API · Google Gemini API (google-generativeai) · cryptography (Fernet) for license/settings storage.
 
