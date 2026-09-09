@@ -36,26 +36,6 @@ Option 1 — Use the installer (.exe) — for regular users
 
 If the repo has a SmartSubtitleSuite_Setup_vX.X.X.exe file under Releases, download and run it like installing any other app (Next → Next → Install). See packaging/BUILD_GUIDE.md for details on what happens during install.
 
-⚠️ Since the app isn't code-signed yet, Windows SmartScreen/Defender may show an "Unknown publisher" warning on first run — click More info → Run anyway. This is a normal warning for open-source software without a paid certificate, not a sign of malware. See BUILD_GUIDE.md for the full explanation.
-
-Option 2 — Run from source (for developers)
-bash
-git clone <your-repo-link>
-cd smart-subtitle-suite
-pip install -r requirements.txt
-python main.py
-Option 3 — Build your own installer
-
-Full step-by-step guide in packaging/BUILD_GUIDE.md. Quick summary (run on Windows):
-
-bash
-pip install pyinstaller
-pyinstaller packaging\build_exe.spec
-:: build\ and dist\ folders appear at the project root
-:: open packaging\installer.iss with Inno Setup Compiler and click Build
-
-Output: dist_installer\SmartSubtitleSuite_Setup_v1.0.0.exe
-
 🔑 API Key Setup Guide
 
 The app needs 3 kinds of API keys. TMDB's key is already hardcoded in the code (no signup needed on your end); the other two are free to register and go into the Settings tab (OpenSubtitles/SubSource), or directly in the Translate tab when adding a key (Gemini).
