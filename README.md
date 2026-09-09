@@ -34,8 +34,6 @@ An internet connection (calls to TMDB, OpenSubtitles, SubSource, and the Gemini 
 🚀 Installation
 Option 1 — Use the installer (.exe) — for regular users
 
-If the repo has a SmartSubtitleSuite_Setup_vX.X.X.exe file under Releases, download and run it like installing any other app (Next → Next → Install). See packaging/BUILD_GUIDE.md for details on what happens during install.
-
 🔑 API Key Setup Guide
 
 The app needs 3 kinds of API keys. TMDB's key is already hardcoded in the code (no signup needed on your end); the other two are free to register and go into the Settings tab (OpenSubtitles/SubSource), or directly in the Translate tab when adding a key (Gemini).
