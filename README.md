@@ -120,4 +120,6 @@ OpenSubtitles and SubSource are third-party services — please follow each prov
 
 <img width="3300" height="1864" alt="Untitled-2" src="https://github.com/user-attachments/assets/d6ee675d-fb8d-46ce-9113-3aad7b2e5a3a" />
 <img width="3300" height="1864" alt="Untitled-1" src="https://github.com/user-attachments/assets/d4a2e815-aa77-4243-8616-25879adc435c" />
+<img width="3300" height="1864" alt="Untitled-3" src="https://github.com/user-attachments/assets/4ce55ac5-c7d7-4ce3-9d11-fdc4218d7bf4" />
+
 
