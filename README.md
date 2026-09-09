@@ -133,10 +133,6 @@ packaging/
 
 Python 3 · PyQt5 · TMDB API · OpenSubtitles REST API v1 · SubSource API · Google Gemini API (google-generativeai) · cryptography (Fernet) for license/settings storage.
 
-⚠️ Before pushing to GitHub
-
-The project ships with a .gitignore that excludes files containing personal data: suite_settings.json (OpenSubtitles/SubSource keys + password), translator_config.json (saved Gemini keys), and license/trial state files. Double-check with git status before committing to make sure none of these end up in a public repo.
-
 📜 Credits / License
 The translation engine (Gemini) is inherited as-is from Smart Subtitle Translator Pro.
 This product uses the TMDB API but is not endorsed or certified by TMDB.
