@@ -117,3 +117,7 @@ Python 3 · PyQt5 · TMDB API · OpenSubtitles REST API v1 · SubSource API · G
 The translation engine (Gemini) is inherited as-is from Smart Subtitle Translator Pro.
 This product uses the TMDB API but is not endorsed or certified by TMDB.
 OpenSubtitles and SubSource are third-party services — please follow each provider's terms of use when using their API keys.
+
+<img width="3300" height="1864" alt="Untitled-2" src="https://github.com/user-attachments/assets/d6ee675d-fb8d-46ce-9113-3aad7b2e5a3a" />
+<img width="3300" height="1864" alt="Untitled-1" src="https://github.com/user-attachments/assets/d4a2e815-aa77-4243-8616-25879adc435c" />
+
